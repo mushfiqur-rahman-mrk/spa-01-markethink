@@ -1,6 +1,11 @@
 import Navbar from "../Navbar/Navbar";
 import Container from "../Shared/Container";
-import bannerImg1 from "/src/assets/bannerImg1.png";
+import bannerImg2 from "/src/assets/banner img 2.png";
+import slack from '/src/assets/slack.png'
+import amazon from '/src/assets/amazon.png'
+import logitech from '/src/assets/logitech.png'
+import google from '/src/assets/google.png'
+import facebook from '/src/assets/facebook.png'
 
 const Banner = () => {
   return (
@@ -11,11 +16,12 @@ const Banner = () => {
         </div>
         <img
           className="absolute bottom-0 left-0"
-          src="/src/assets/banner img 2.png"
+          src={bannerImg2}
           alt=""
         />
         <Container>
-          <div className="flex flex-col justify-center relative items-center z-20 pt-20 ">
+          <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="600" className="flex flex-col justify-center relative items-center z-20 pt-20 ">
             <h3 className="text-white font-medium text-center text-3xl opacity-80 flex justify-center items-center gap-12">
               <hr className="bg-white w-[60px] h-[1px] opacity-40"></hr>
               The Best
@@ -40,12 +46,13 @@ const Banner = () => {
         </Container>
       </div>
       
-        <div className="flex bg-[#F6FBF9] py-[54px] justify-center items-center gap-28">
-          <img src="/src/assets/slack.png" className="h-[32px]" alt="" />
-          <img src="/src/assets/amazon.png" className="h-[32px]" alt="" />
-          <img src="/src/assets/logitech.png" className="h-[32px]" alt="" />
-          <img src="/src/assets/google.png" className="h-[32px]" alt="" />
-          <img src="/src/assets/facebook.png" className="h-[32px]" alt="" />
+        <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="600" className="flex bg-[#F6FBF9] py-[54px] justify-center items-center gap-28">
+          <img src={slack} className="h-[32px]" alt="" />
+          <img src={amazon} className="h-[32px]" alt="" />
+          <img src={logitech} className="h-[32px]" alt="" />
+          <img src={google} className="h-[32px]" alt="" />
+          <img src={facebook} className="h-[32px]" alt="" />
         </div>
       
     </>

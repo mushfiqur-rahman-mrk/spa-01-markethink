@@ -1,4 +1,9 @@
 import Container from "../Shared/Container";
+import logo from '/src/assets/logo 2.png'
+import fb from '/src/assets/fb.png'
+import twitter from '/src/assets/twitter.png'
+import insta from '/src/assets/instagram.png'
+
 
 const Footer = () => {
 
@@ -7,12 +12,12 @@ const Footer = () => {
       <Container>
         <footer className="grid grid-cols-12 py-10 mt-20">
         <div className="col-span-5">
-          <img src="/src/assets/logo 2.png" alt="" />
+          <img src={logo} alt="" />
           <p className="text-[#78847D] text-xl py-5 leading-8">Marketing is a company that focus on developing company’s strategy for increase digital marketing</p>
           <div className="flex gap-6">
-            <img src="/src/assets/fb.png" alt="" />
-            <img src="/src/assets/twitter.png" alt="" />
-            <img src="/src/assets/instagram.png" alt="" />
+            <img src={fb} alt="" />
+            <img src={twitter} alt="" />
+            <img src={insta} alt="" />
           </div>
         </div>
         <div className="col-span-2 col-start-7">

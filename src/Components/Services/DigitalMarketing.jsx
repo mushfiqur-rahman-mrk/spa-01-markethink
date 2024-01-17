@@ -6,7 +6,8 @@ import icon4 from '/src/assets/icon 4.png'
 const DigitalMarketing = () => {
   return (
     <>
-      <div className=' grid grid-cols-2 gap-20 my-24'>
+      <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="600" className=' grid grid-cols-2 gap-20 my-24'>
         <div>
           <h1 className='text-[#253D32] text-[42px] font-bold leading-[65px]'>We’re Strategic Digital Marketing Agency</h1>
           <p className='text-[#78847D] text-[22px] leading-[40px] my-[30px] max-w-[424px]'>
